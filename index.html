@@ -8,15 +8,26 @@
 </head>
 <body>
 
-    <h1>The Shadow in the Forgotten Chamber</h1>
-    <p>Select a chapter to read:</p>
+    <header>
+        <h1>The Shadow in the Forgotten Chamber</h1>
+        <p>Select a chapter to read:</p>
+    </header>
 
-    <div id="chapter-buttons"></div>
+    <main>
+        <section id="chapter-buttons" role="group" aria-labelledby="chapter-selection">
+            <h2 id="chapter-selection" class="visually-hidden">Chapter Selection</h2>
+            <!-- Chapter buttons will be dynamically inserted here -->
+        </section>
 
-    <div id="chapter-content">
-        <h2 id="chapter-title"></h2>
-        <p id="chapter-text"></p>
-    </div>
+        <section id="chapter-content" aria-labelledby="chapter-title" style="display: none;">
+            <h2 id="chapter-title"></h2>
+            <p id="chapter-text"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 The Shadow in the Forgotten Chamber. All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 
